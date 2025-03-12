@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Imagem Móvel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        #container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        #image {
+            width: 150px;
+            cursor: pointer;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <img id="image" src="https://via.placeholder.com/150" alt="Imagem" draggable="true">
+</div>
+
+<script>
+    const image = document.getElementById("image");
+
+    // Função para iniciar o arraste
+    image.addEventListener("dragstart", (e) => {
+        // Armazena a posição inicial do mouse
+        const offsetX = e.clientX - image.getBoundingClientRect().left;
+        const offsetY = e.clientY - image.getBoundingClientRect().top;
+
+        // Define o comportamento durante o arraste
+        image.style.position = "absolute";
+        image.style.zIndex = 1000; // Coloca a imagem na frente de outros elementos
+
+        // Função de arraste
+        const moveImage = (moveEvent) => {
+            image.style.left = `${moveEvent.clientX - offsetX}px`;
+            image.style.top = `${moveEvent.clientY - offsetY}px`;
+        };
+
+        // Função para parar o arraste
+        const stopDrag = () => {
+            document.removeEventListener("mousemove", moveImage);
+            document.removeEventListener("mouseup", stopDrag);
+        };
+
+        // Adiciona os ouvintes de evento para mover a imagem
+        document.addEventListener("mousemove", moveImage);
+        document.addEventListener("mouseup", stopDrag);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomakh&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    grid-column: 10rem;
+}
+
+body{
+    font-family: "Monomakh", serif;
+    background: #ffffff;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p, a {
+    font-size: 20px;
+}
+
+.apresentacao {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.img-sobre {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    width: 100%;
+    max-width: 800px;
+    height: 20rem;
+    border-radius: 10px;
+}
+
+.total-menu {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 10rem auto 0;
+}
+
+.menu h1{
+    text-align: center;
+}
+
+.lista {
+    display: flex;
+    gap: 3rem;
+    font-size: 1.8rem;
+}
+
+/* Seção de conteúdo */
+.sb, .p1, .p2, .p3, .p4, .p5, .p6, .f1, .f2, .f3 {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 7rem auto 3rem;
+}
+
+.p1 p, .p2 p, .p3 p, .p4 p, .p5 p, .p6 p, .f1 p, .f2 p, .f3 p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+#sobre, #pontos, #escala, #estado, #simulador, #dilatacao, #formula{
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+}
+
+.sb_left img.term {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.mg{
+    margin-right: 1rem;
+}         
+
+li {
+    list-style-type: none;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+    .lista {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+
+    .sb, .p1, .p2, .p3, .p4, .p5, .p6, .f1, .f2, .f3 {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,15 @@
+body{
+    background: linear-gradient(90deg, rgb(2, 0, 24) 0%, rgb(15, 2, 29) 35%, rgb(45, 1, 58) 100%);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 10rem;
+}
+
+h1{
+  color: aliceblue;
+}

@@ -1,0 +1,27 @@
+BODY {
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+.tela-left {
+    position: relative;
+}
+
+#ferro {
+    margin-left: 40rem;
+    cursor: pointer;
+    position: absolute;
+}
+
+.fire- .fire {
+    margin-top: 20rem;
+    margin-left: 30rem;
+}
+
+.ice- .ice {
+    margin-top: -17.5rem;
+    margin-left: 55rem;
+    margin-right: 0;
+}
+
