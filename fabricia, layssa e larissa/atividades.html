@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atividades.css"/>
+    <script src="atividades.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!--Google fonts-->
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--bootstrap fim-->
+    <script src="https://kit.fontawesome.com/1090c0e9f6.js" crossorigin="anonymous"></script>
+    <title>Simulador</title>
+</head>
+<body>
+
+    <!--Cabeçalho-->
+    <nav>
+        <div class="left-side">
+            <a href="" class="logo-container">
+                <img src="imagens/PROGRAMA DE SIMULAÇÃO E CONHECIMENTO.png" alt="LOGO" class="imgg">
+            </a>
+    
+            <div class="line"></div>
+    
+            <a href="https://www.se.senai.br/" class="logo-container senai-logo" target="_blank">
+                <img src="imagens/Imagem do WhatsApp de 2025-02-21 à(s) 13.53.57_9b235900.jpg" alt="SENAI" class="imgg">
+            </a>
+        </div>
+    
+        <div class="right-side">
+            <div class="nav-item">
+                <a href="#">Sobre</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Simulações</a>
+            </div>
+    
+            <div class="nav-item">
+                <i class="fa-regular fa-user" id="userIcon"></i>
+            </div>
+        </div>
+
+         <!--menu mobile-->
+
+       <div class="btn-abrir" id="btn-menu">
+        <i class="bi bi-list"></i>
+       </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar">
+                <i class="bi bi-x-lg"></i>
+            </div>
+
+            <div>
+                <div class="nav-item">
+                    <a href="#">Sobre</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#">Simulações</a>
+                </div>
+        
+                <div class="nav-item">
+                    <a href="#">Conta</a>
+                </div>
+
+        </div>
+
+        <div class="overlay-menu" id="overlay-menu">
+        </div>
+      </nav>
+
+
+        <!--carousel-->
+        <header>
+            <div class="container-slider">
+              <button id="prev-button"><img src="carrosel/arrow.png" alt="prev-button"></button>
+              <div class="container-images">
+                <img src="carrosel/Captura de tela 2025-03-12 144308.png" alt="girl" class="slider on">
+                <video width="520" height="440" controls class="slider">
+                    <source src="carrosel/Gravação de Tela 2025-03-12 143906.mp4" type="video/mp4">
+                    <source src="carrosel/Gravação de Tela 2025-03-12 143906.mp4" type="video/ogg">
+                  </video>
+                </div>
+                <button id="next-button" class=""><img src="carrosel/arrow.png" alt="next-button"></button>
+              </div>
+            </header>
+
+    <!--título-->
+    <header>
+        <div id="container">
+            <h3 class="tituloclass">Operações Básicas<span>!</span></h3>
+        </div>
+
+        <div class="simu">
+            <a href="simulador.html">
+                <button> Simulador </button>
+            </a>
+    </header>
+
+
+    <!--MENU-->
+    <nav class="menu">
+        <div class="menu-links">
+            <a href="sobre.html" class="menu-item"  >Sobre</a>
+            <a href="atividades.html" class="menu-item active">Atividades</a>
+            <a href="creditos.html" class="menu-item">Créditos</a>
+        </div>
+        <div class="linha"></div>
+    </nav>
+
+    <!--atividades-->
+        <div class="ativi"><!--introduçao-->
+            <h2><span>Como utilizar</span> nosso simulador:</h2>
+            <p>Este simulador é um instrumento interativo que permite aos usuários explorar a matemática e aprender a usar as operações básicas.</p>
+            <p>Você poderá encontrar imagens ludicas e destintas para representar a quantidade de números que desejar usar.</p>
+            <p>Você também poderá encontrar simbolos das Operações básicas da matemática.</p>
+            <p>Eles possibilitarão que quem estiver utilizando o simulador consiga realizar qualquer uma das operações disponiveis.</p>
+            <p><strong><span>*OBS: Não pode ser realizadas contas com vírgulas, números negativos, frações, etc... </span></strong></p>
+            <br>
+            <!--introdução fim-->
+
+            <!--Sobre os simbolos-->
+            <h3>Esses simbolos são:</h3>
+            <ul>
+                <li>Adição:<span> símbolo da adição (+) é usado para representar a operação matemática de somar dois ou mais números. Ele indica que devemos juntar os valores envolvidos.</span></li>
+                <li>Subtração: <span>O símbolo da subtração é o sinal de menos (-). Ele é usado para representar a operação matemática de subtrair um número de outro.</span></li>
+                <li>Multiplicação: <span>O símbolo da multiplicação é o (x). Ele é utilizado para representar a operação de multiplicar dois ou mais números.</span></li>
+                <li>Divisão: <span>O símbolo da divisão é (÷). Ele é usado para representar a operação de dividir um número por outro.</span></li>
+                    
+            </ul>
+            <!--Sobre os simbolos fim-->
+
+            <!--instruçoes-->
+            <h2>Instruções para usar o simulador:</h2>
+            <p><span>1.</span> Arraste a figura (borboleta ou flor) que deseja usar para o espaço acima delas.</p>
+            <p><span>2.</span> Depois, escolha uma das operações básicas disponíveis.</p>
+            <p><span>3.</span> Após isso, você verá o resultado da operação escolhida.</p> <br>
+            <!--instruçoes fim-->
+
+
+            <!--atividades: obs-->
+            <div class ="">
+                <div class="icon"><i class="bi bi-eyeglasses"></i></div>
+            </div>
+            <div class="txt">
+            <h3>Para visualizar os exemplos das operações sendo realizadas, clique no video e imagem que foram expostas acima!!
+            </h3>
+            </div>
+            <!--atividades: obs fim-->
+
+          
+        </div>
+    
+
+    
+
+    
+
+

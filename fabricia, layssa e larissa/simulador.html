@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador</title>
+    <meta name="description" content="Interactive Math Calculator for Learning" />
+    <link rel="stylesheet" href="simulador.css" />
+    <script src="simuladorr.js"></script>
+  </head>
+
+  <body>
+    <div class="calculator-container">
+      <div class="calculator-card">
+        <button id="homeButton" class="home-button" aria-label="Voltar para tela inicial">
+          <a href="sobre.html"><span class="home-icon">🏠</span></a>
+        </button>
+        
+        <div class="text-center">
+          <h1 class="title">Simulador de Operações básicas</h1>
+          <p class="description">Arraste as imagens para os quadrados e aprenda matemática!</p>
+        </div>
+
+        <div class="calculator-display">
+          <div class="number-display" id="leftDisplay">0</div>
+          <div class="operation-display" id="operationDisplay">×</div>
+          <div class="number-display" id="rightDisplay">0</div>
+          <div class="equals-display">=</div>
+          <div class="number-display" id="resultDisplay">0</div>
+        </div>
+
+        <div class="text-center help-text">
+          <p>Para determinar a operação, o usuário deve escolher um dos botões abaixo</p>
+          <div class="operation-buttons">
+            <button id="addButton" class="operation-button">+</button>
+            <button id="subtractButton" class="operation-button">-</button>
+            <button id="multiplyButton" class="operation-button active">×</button>
+            <button id="divideButton" class="operation-button">÷</button>
+          </div>
+        </div>
+
+        <div class="calculator-boxes">
+          <div class="box-container">
+            <p class="box-title">Primeiro número</p>
+            <div class="drop-box" id="leftBox"></div>
+          </div>
+          
+          <div class="operation-symbol" id="operationSymbol">×</div>
+          
+          <div class="box-container">
+            <p class="box-title">Segundo número</p>
+            <div class="drop-box" id="rightBox"></div>
+          </div>
+          
+          <div class="equals-symbol">=</div>
+          
+          <div class="box-container">
+            <p class="box-title">Resultado</p>
+            <div class="result-box" id="resultBox"></div>
+          </div>
+        </div>
+
+        <div class="draggable-items-container">
+          <p class="drag-instruction">Arraste estes itens para os quadrados acima:</p>
+          <div class="draggable-item" id="butterflyItem" draggable="true">
+            <div class="butterfly-icon"></div>
+          </div>
+          <div class="draggable-item" id="flowerItem" draggable="true">
+            <div class="flower-icon"></div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button id="checkButton" class="check-button">✓ Verificar</button>
+          <button id="resetButton" class="reset-button">↻ Reiniciar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast">
+      <div class="toast-content" id="toastContent"></div>
+    </div>
+
+    
+  </body>
+</html>

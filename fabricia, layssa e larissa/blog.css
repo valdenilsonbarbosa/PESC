@@ -1,0 +1,295 @@
+body{
+    background-color: black;
+}
+/*header*/
+/* Estilos gerais */
+.art {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(252, 252, 252);
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.txt {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: monospace;
+}
+.txt span{
+    color:mediumpurple;
+}
+
+.txt-op {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: monospace;
+    width: 100%;
+}
+
+.txt-op span {
+    color: mediumpurple;
+}
+
+.txt-p, li {
+    font-size: 16px;
+    font-family: "Quicksand", serif;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+    
+}
+
+
+.prop {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: monospace;
+}
+.prop-ex{
+    text-align: center;
+    
+  
+    font-size: 20px;
+    font-family: monospace;
+}
+
+
+.prop span{
+    color:mediumpurple;
+}
+
+ol.ex {
+    padding-left: 20px;
+    margin-right: 0;
+    
+}
+
+/*exemplos*/
+.exemplos{
+    background-color: mediumpurple;
+    width: 95%;
+    max-width: 1000px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    text-align: center; /* Centraliza o conteúdo dentro da div */
+}
+.exemplos ol {
+    display: inline-block; /* Faz com que a lista respeite o alinhamento centralizado */
+    text-align: center; /* Mantém o texto alinhado à esquerda dentro da lista */
+    padding-left: 0; /* Remove o padding padrão */
+}
+
+/*botão*/
+.btn-explicação button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:mediumpurple;
+    border-radius: 30px;
+    border:0;
+    cursor: pointer;
+    font-family: "Quicksand",serif;
+    margin-bottom: 20px;
+    
+} 
+.btn-explicação button:hover{
+box-shadow: 0px 0px 8px rgb(106, 69, 181);
+transform:scale(1.05) ;
+}
+.des{
+    font-size: 16px;
+    font-family: "Quicksand", serif;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Ajustes para telas menores */
+@media screen and (max-width: 1123px) {
+    .art {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .art {
+        width: 95%;
+        padding: 5px;
+    }
+    .txt {
+        font-size: 24px;
+    }
+    .txt span{
+        color:mediumpurple;
+    }
+    .txt-op {
+        font-size: 20px;
+    }
+    .prop {
+        font-size: 18px;
+    }
+    ol.ex {
+        padding-left: 20px;
+        margin-right: 0;
+    }
+    .el{
+        margin-right: 300px;
+    }
+    .btn-explicação button{
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color:mediumpurple;
+        border-radius: 30px;
+        border:0;
+        cursor: pointer;
+        font-family: "Quicksand",serif;
+        margin-bottom: 20px;
+        
+  } 
+        .btn-explicação button:hover{
+        box-shadow: 0px 0px 8px rgb(106, 69, 181);
+        transform:scale(1.05) ;
+  }
+  .des{
+    font-size: 16px;
+    font-family: "Quicksand", serif;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+.prop-ex{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: monospace;
+}
+ol.ex {
+    padding-left: 20px;
+    margin-right: 0;
+    margin-left: 100px;
+}
+.exemplos{
+    background-color: mediumpurple;
+    width: 95%;
+    max-width: 1000px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    text-align: center; 
+}
+
+}
+
+@media screen and (max-width: 480px) {
+    .txt {
+        font-size: 20px;
+    }
+    .txt span{
+        color:mediumpurple;
+    }
+    .txt-op {
+        font-size: 18px;
+    }
+    .txt-p, li {
+        font-size: 14px;
+    }
+    .prop {
+        font-size: 16px;
+    }
+    ol.ex {
+        padding-left: 20px;
+        margin-right: 0;
+    }
+    .el{
+        margin-right: 0px;
+    }
+    .btn-explicação button{
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color:mediumpurple;
+        border-radius: 30px;
+        border:0;
+        cursor: pointer;
+        font-family: "Quicksand",serif;
+        margin-bottom: 20px;
+        
+  } 
+        .btn-explicação button:hover{
+        box-shadow: 0px 0px 8px rgb(106, 69, 181);
+        transform:scale(1.05) ;
+  }
+    .des{
+        font-size: 16px;
+        font-family: "Quicksand", serif;
+        line-height: 1.5;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .prop-ex{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 20px;
+        font-family: monospace;
+    }
+    ol.ex {
+        padding-left: 20px;
+        margin-right: 0;
+        margin-left: 100px;
+    }
+    .exemplos{
+        background-color: mediumpurple;
+        width: 95%;
+        max-width: 1000px;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px auto;
+        text-align: center; 
+    }
+   
+}
+
+
+@media screen and (max-width: 1122px) {
+    .exemplos{
+        background-color: mediumpurple;
+        max-width: 80%;
+        border-radius: 10px;
+    }
+    .prop-ex{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 20px;
+        font-family: monospace;
+    }
+    ol.ex {
+        padding-left: 10px;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .exemplos{
+        background-color: mediumpurple;
+        width: 90%;
+        max-width: 1000px;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px auto;
+        text-align: center; 
+    }
+    
+}
