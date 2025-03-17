@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Simulação e Conhecimento</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="left-side">
+            <a href="" class="logo-container">
+                <img src="img/logonav.png" alt="LOGO">
+            </a>
+
+            <div class="line"></div>
+
+            <a href="https://www.se.senai.br/" class="logo-container senai-logo" target="_blank">
+                <img src="img/senainav.png" alt="SENAI">
+            </a>
+        </div>
+
+        <div class="right-side">
+            <div class="nav-item">
+                <a href="#">Sobre</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Simulações</a>
+            </div>
+
+            <div class="nav-item">
+                <i class="fa-regular fa-user" id="userIcon"></i>
+            </div>
+        </div>
+    </header>
+
+
+
+    <footer>
+
+        <div class="footer">
+
+
+            <div class="container">
+
+                <h1>Explore Mais</h1>
+
+                <a href="dicasparausarpsec.html">dicas para usar psec</a>
+
+                <div class="resumo">
+
+                    <p>O PSEC (Programa de Simulações e Conhecimentos), é um projeto desenvolvido pela turma do curso
+                        Técnico em Desenvolvimento de Sistemas Integrado ao Ensino Médio do SENAI/SE da unidade CETCC,
+                        com o objetivo de auxiliar o docente na sua prática pedagógica mesclando os conhecimentos
+                        básicos com as habilidades técnicas. </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="abadelinks">
+
+
+
+                <div class="links">
+
+                    <span class="detalhe"></span>
+
+                    <div class="icones">
+
+                        <a class="aimg" id="um" href="#"><img src="img/1.svg" onmouseover="this.src='img/1hover.svg'" onmouseout="this.src='img/1.svg' " alt="facebook"></a>
+
+                        <a class="aimg" id="dois" href="#"><img src="img/2.svg" onmouseover="this.src='img/2hover.svg'" onmouseout="this.src='img/2.svg' " alt="X"></a>
+
+                        <a class="aimg" id="tres" href="#"><img src="img/3.svg" onmouseover="this.src='img/3hover.svg'" onmouseout="this.src='img/3.svg' " alt="linkedin"></a>
+
+                        <a class="aimg" id="quatro" href="#"><img src="img/4.svg" onmouseover="this.src='img/4hover.svg'" onmouseout="this.src='img/4.svg' " alt="instagram"></a>
+
+                        <a class="aimg" id="cinco" href="#"><img src="img/5.svg" onmouseover="this.src='img/5hover.svg'" onmouseout="this.src='img/5.svg' " alt="youtube"></a>
+
+                    </div>
+
+                    <span class="detalhe2"></span>
+
+                </div>
+
+
+                <div class="info">
+
+                    <a href="sobrepsec.html">sobre psec</a>
+                    <a href="#" onclick="showCustomAlert()">parcerias</a>
+                    <a href="nossaequipe.html">nossa equipe</a>
+
+                </div>
+
+                <div id="customAlert">
+                    <p>O SENAI/SE é o principal apoiador do nosso projeto, oferecendo toda a estrutura necessária para a sua realização. A seguir, encaminho você para o site do SENAI, para que possa conhecê-lo melhor.
+                    </p>
+                    <button class="closeBtn" onclick="closeCustomAlert()">Fechar</button>
+                    <a class="senaiBtn" href="https://www.se.senai.br/">Ir para o site</a>
+                </div>
+
+
+                <div class="rodape">
+
+                    <a class="logo2" href="#"><img src="img/psec.svg" alt="PSEC"></a>
+                    <a class="logo2" href="#"> <img src="img/senai.svg" alt="SENAI"></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+        // Função para mostrar o alerta personalizado
+        function showCustomAlert() {
+            document.getElementById("customAlert").style.display = "block";
+        }
+
+        // Função para fechar o alerta personalizado
+        function closeCustomAlert() {
+            document.getElementById("customAlert").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

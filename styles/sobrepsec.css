@@ -1,0 +1,73 @@
+/**************************************************************************/
+/***************************** SOBRE PSEC *********************************/
+/**************************************************************************/
+
+.sobrepsec {
+  display: grid;
+  font-size: 1em;
+  margin: 8em auto auto auto;
+  grid-template-columns: 1fr;
+  background-color: white;
+  padding: 2em;
+  border-radius: 0.5em;
+  width: 90%;
+  max-width: 45em;
+  text-align: center;
+  box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.3);
+  overflow-wrap: break-word;
+}
+
+.sobrepsec h3,
+.sobrepsec h4 {
+  color: #4d5b9c;
+}
+
+.sobrepsec a {
+  color: #3a92a7;
+  text-decoration-color: #3a92a7;
+  transition: 0.3s;
+}
+
+.sobrepsec a:hover {
+  color: #a7285d;
+  text-decoration-color: #a7285d;
+}
+
+.sobrepsec li {
+  text-align: left;
+}
+
+.sobrepsec iframe {
+  margin: auto;
+  width: 100%;
+  max-width: 26em;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.resumo2 {
+  margin-top: 1em;
+  word-break: break-word;
+}
+
+.sobrepsec li h4 {
+  color: black;
+}
+
+@media (max-width: 950px) {
+  .sobrepsec {
+    width: 90%;
+    padding: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobrepsec {
+    padding: 1em;
+  }
+
+  .sobrepsec iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}
