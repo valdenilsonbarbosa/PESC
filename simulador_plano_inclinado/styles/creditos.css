@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.profile-card {
+    display: flex;
+    align-items: flex-start; 
+    margin-left: 1em;
+    margin-top: 1em;
+    flex-wrap: wrap; 
+}
+
+.image {
+    width: 100%; 
+    max-width: 340px; 
+    height: auto; 
+    margin-right: 1em;
+    border-radius: 20px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 2.5em;
+    flex: 1; 
+}
+
+.text-container h2,
+.text-container h3,
+.text-container p {
+    margin: 0.5em 0;
+    font-size: larger;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column; 
+        align-items: center;
+        margin-left: 0; 
+    }
+
+    .image {
+        max-width: 100%; 
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .text-container {
+        margin-left: 0; 
+        text-align: center;
+    }
+
+    .text-container h2,
+    .text-container h3,
+    .text-container p {
+        font-size: 1.2em; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .text-container h2,
+    .text-container h3,
+    .text-container p {
+        font-size: 1em;
+    }
+}
