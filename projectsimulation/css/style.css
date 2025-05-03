@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+
+  about-panel {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: unset;
+}
+
+header{
+  border-bottom: 2px rgba(0, 0, 0, 0.15) solid;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 99vw;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line{
+  width: 3px;
+  height: 90%;
+
+  background-color: black;
+
+  border-radius: 30%;
+}
+
+.left-side{
+  width: 50%;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  column-gap: 1vw;
+
+  padding-left: 1vw;
+}
+
+.logo-container{
+  height: 150%;
+}
+
+.senai-logo{
+  width: 50%;
+  height: 50%;
+}
+
+img{
+  width: 100;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.right-side{
+  width: 50%;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  column-gap: 1vw;
+  padding-right: 1vw;
+
+  font-size: 2rem;
+}
+
+.nav-item{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  padding: 5px 10px;
+}
+.nav-item:hover{
+  color: rgb(51, 51, 51);
+  
+  background-color: rgba(161, 161, 161, 0.678);
+  border-radius: 50px;
+}
+
+.section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.section .icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.section .content {
+    flex: 1;
+}
+
+
+
+.a11y-feature-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.accessibility-feature {
+    text-align: center;
+    flex: 1;
+}
+
+.accessibility-feature .badge-holder {
+    margin-bottom: 10px;
+}
+
+.accessibility-feature .badge {
+    width: 60px;
+    height: 60px;
+    fill: #004d99;
+}
+
+.a11y-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.a11y-text a {
+    color: #0078d7;
+    text-decoration: none;
+}
+
+.a11y-text a:hover {
+    text-decoration: underline;
+}
+
+.system-requirements .badge-holder {
+    float: left;
+    margin-right: 10px;
+}
+
+.system-requirements .p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.system-requirements .inline-link {
+    color: #0078d7;
+    text-decoration: none;
+}
+
+.system-requirements .inline-link:hover {
+    text-decoration: underline;
+}
+
+.supporter-callout {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+.supporter-callout h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.supporter-callout img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.supporter-callout a {
+    text-decoration: none;
+}
+
+.supporter-callout .inline-link {
+    color: #0078d7;
+}
+
+.supporter-callout .inline-link:hover {
+    text-decoration: underline;
+}
+  
+
+  .container-slider {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: -170px;
+  }
+  
+  .container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+  }
+  
+  .slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .on {
+    opacity: 1;
+  }
+  
+  #prev-button, #next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+  }
+  
+ .container-images #prev-button img, .container-images #next-button img {
+    width: 100%;
+    height:  0%;
+  }
+  
+  #prev-button {
+    transform: rotate(180deg);
+  }
+
+ section h1{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
+  margin: 2rem;
+  margin-top: -8rem;
+  font-size: 2rem;
+ }
+ 
+ section .ini{
+ border: none;
+ background-color: #4e4d4d;
+ border-radius: 10px;
+ width: 125px;
+ height: 2rem;
+ font-size: 15px;
+ cursor: pointer;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-display: flex;
+ justify-content: center;
+ margin-left: 3rem;
+ margin-top: -25px;
+ }
+
+ main{
+  border-bottom: 2px rgba(0, 0, 0, 0.15) solid;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 99vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  font-size: 30px;
+  
+ }
+ .barra .lista{
+  display: flex;
+  gap: 5rem;
+  margin-left: 45rem;
+  margin-top: 15px;
+  
+ }
+ .barra a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: normal;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+ .barra a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(206, 93, 125);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.barra a:hover::after {
+  width: 100%;
+ 
+} 
+
+
+.background{
+    filter: blur(8px);
+    opacity: 70%;
+    object-fit: cover;
+    z-index: 10;
+    max-height: 325px;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: stretch;
+    display: none;
+    position: absolute;
+    width: 108px;
+    height: 2px;
+    background: black;
+    margin-inline-start: 11px;
+    margin-top: 5px;
+  }
+
+  .main-screenshot{
+    object-fit: contain;
+    z-index: 30;
+    width: 100%;
+    max-height: 325px;
+    grid-column: 2 / 3;
+    width: 495px;  
+  grid-row: 1 / 2;
+  }
+
+  
+.senai-logo{
+  width: 50%;
+  height: 50%;
+}
+
+img{
+  width: 100;
+  height: 100%;
+
+  object-fit: contain;
+}
