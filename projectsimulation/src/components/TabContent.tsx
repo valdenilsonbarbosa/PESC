@@ -320,7 +320,38 @@ export function TabContent({ activeTab }: { activeTab: string }) {
             <h2 className="text-3xl font-bold text-[#E0E0E0] mb-8 text-glow">
               Laboratórios Virtuais de Astronomia
             </h2>
-            {/* Moon Phase Simulator */}
+                       {/* Download Resources Section - New Addition */}
+                       <div className="cosmic-card p-6 rounded-lg mb-8">
+              <h3 className="text-2xl font-bold text-[#00FF9D] mb-4 flex items-center">
+                <BookOpen className="mr-2 h-6 w-6" /> Recursos para Download
+              </h3>
+              <p className="text-[#E0E0E0]/90 mb-6">
+                Baixe nosso guia completo de atividades práticas e exercícios
+                sobre o Sistema Solar e fases lunares.
+              </p>
+              <a
+                href="https://uploadnow.io/f/XMHyGzr"
+                download
+                className="inline-flex items-center px-6 py-3 cosmic-btn rounded-lg text-[#E0E0E0] hover:text-[#00FF9D] transition-all transform hover:scale-105"
+              >
+                <svg
+                  className="w-5 h-5 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  ></path>
+                </svg>
+                Download Guia de Atividades (PDF)
+              </a>
+            </div>
+           {/* Moon Phase Simulator */}
             <div className="cosmic-card p-6 rounded-lg mb-8">
               <h3 className="text-2xl font-bold text-[#00FF9D] mb-4 flex items-center">
                 <Moon className="mr-2 h-6 w-6" /> Simulador de Fases Lunares
