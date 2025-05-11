@@ -6,3 +6,7 @@ TUDO filter=lfs diff=lfs merge=lfs -text
 na filter=lfs diff=lfs merge=lfs -text
 pasta filter=lfs diff=lfs merge=lfs -text
 projectsimulations/** filter=lfs diff=lfs merge=lfs -text
+projectsimulations/*.png filter=lfs diff=lfs merge=lfs -text
+projectsimulations/*.jpg filter=lfs diff=lfs merge=lfs -text
+projectsimulations/*.svg filter=lfs diff=lfs merge=lfs -text
+projectsimulations/*.pdf filter=lfs diff=lfs merge=lfs -text
